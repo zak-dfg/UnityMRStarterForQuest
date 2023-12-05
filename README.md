@@ -14,7 +14,7 @@ If you want to try the demos immediately without building in Unity, please downl
 Demonstrates a bunch of the MRTK hand interactions, and gives a good starting point of seeing what's possible with the included piano, buttons, sliders, and other interactive components.
 ![MRTK Hand Interaction](ReadmeFiles/MRTKHandInteractions.jpg)
 
-## 2.Mesh Visualization
+## 2.Mesh Visualization (for Quest3)
 
 `StarterWithMRTK/Assets/Scenes/2_Mesh Example.unity`  
 You can try various mesh samples by enabling/disabling OVRSceneManager_1~3 in the scene.  
@@ -22,7 +22,7 @@ You can try various mesh samples by enabling/disabling OVRSceneManager_1~3 in th
 The video below is of OVRSceneManager_3.  
 [![Mesh Visualization Example](https://img.youtube.com/vi/HVR5cXg5MSk/0.jpg)](https://www.youtube.com/watch?v=HVR5cXg5MSk)
 
-## 3.Mesh Copy
+## 3.Mesh Copy (for Quest3)
 
 `StarterWithMRTK/Assets/Scenes/3_Mesh Copy.unity`  
 
