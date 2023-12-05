@@ -18,7 +18,7 @@ Demonstrates a bunch of the MRTK hand interactions, and gives a good starting po
 
 `StarterWithMRTK/Assets/Scenes/2_Mesh Example.unity`  
 You can try various mesh samples by enabling/disabling OVRSceneManager_1~3 in the scene.  
-*Please enable only one at a time.  
+*Please enable only one VRSceneManager at a time.  
 The video below is of OVRSceneManager_3.  
 [![Mesh Visualization Example](https://img.youtube.com/vi/HVR5cXg5MSk/0.jpg)](https://www.youtube.com/watch?v=HVR5cXg5MSk)
 
