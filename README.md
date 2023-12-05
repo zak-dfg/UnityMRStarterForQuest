@@ -20,6 +20,7 @@ Demonstrates a bunch of the MRTK hand interactions, and gives a good starting po
 You can try various mesh samples by enabling/disabling OVRSceneManager_1~3 in the scene.  
 *Please enable only one VRSceneManager at a time.  
 The video below is of OVRSceneManager_3.  
+[video]  
 [![Mesh Visualization Example](https://img.youtube.com/vi/HVR5cXg5MSk/0.jpg)](https://www.youtube.com/watch?v=HVR5cXg5MSk)
 
 ## 3.Mesh Copy (for Quest3)
@@ -28,6 +29,7 @@ The video below is of OVRSceneManager_3.
 
 This sample allows you to duplicate and manipulate room mesh.  
 Please note that this sample is experimental and the source may change in the future.  
+[video]  
 [![Mesh Copy Example](https://img.youtube.com/vi/BvuRo9tyMtM/0.jpg)](https://www.youtube.com/watch?v=BvuRo9tyMtM)
 
 
