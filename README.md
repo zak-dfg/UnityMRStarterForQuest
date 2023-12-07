@@ -1,4 +1,4 @@
-# Unity VR Starter Kit
+# Unity MR Starter For Quest
 This is a getting started package for creating VR experiences for Meta Quest 1,2,3,Pro headsets using Unity.  
 Get started by using Mixed Reality Toolkit (MRTK).
 
