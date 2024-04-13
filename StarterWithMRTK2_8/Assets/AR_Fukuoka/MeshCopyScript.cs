@@ -7,7 +7,11 @@ using System.Collections;
 using System.Collections.Generic;
 using Microsoft.MixedReality.Toolkit.UI;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
+using System.IO;
+using UnityEngine.AI;
+using System.Linq;
 
 public class MeshCopyScript : MonoBehaviour
 {
@@ -17,6 +21,8 @@ public class MeshCopyScript : MonoBehaviour
     Interactable _Button;
     MeshFilter _MeshFilter;
     MeshCollider _MeshCollider;
+
+    public string path;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,11 +40,37 @@ public class MeshCopyScript : MonoBehaviour
                     _MeshFilter.mesh = roomMeshFilter.mesh;
                     _MeshCollider.sharedMesh = roomMeshFilter.mesh;
                     meshObject.transform.rotation=room.transform.rotation;
-                    meshObject.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
+                    //meshObject.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
                     _Button.gameObject.SetActive(false);
                 }
+                GetMesh();
             } 
         });
+
+        
+    }
+
+    private void GetMesh()
+    {
+        Mesh mesh = _MeshFilter.mesh;
+        Mesh newmesh = new Mesh();
+        newmesh.vertices = mesh.vertices;
+        newmesh.triangles = mesh.triangles;
+        newmesh.uv = mesh.uv;
+        newmesh.normals = mesh.normals;
+        newmesh.colors = mesh.colors;
+        newmesh.tangents = mesh.tangents;
+
+        string newPath = Path.Combine(path, "copy.asset");
+
+        // Create the new mesh asset at the specified path
+        AssetDatabase.CreateAsset(newmesh, newPath);
+        AssetDatabase.SaveAssets();
+
+        foreach (var vertex in newmesh.vertices)
+        {
+            Debug.Log("vertex pos: " + vertex);
+        }
     }
 
     // Update is called once per frame
